@@ -8,6 +8,7 @@ import random
 from PySide2.QtCore import Qt
 from PySide2.QtWidgets import QApplication, QLabel, QPushButton, QWidget, QVBoxLayout
 
+
 class MyWidget(QWidget):
     def __init__(self):
         QWidget.__init__(self)
@@ -28,6 +29,7 @@ class MyWidget(QWidget):
 
     def magic(self):
         self.text.setText(random.choice(self.hello))
+
 
 if __name__ == "__main__":
     app = QApplication([])

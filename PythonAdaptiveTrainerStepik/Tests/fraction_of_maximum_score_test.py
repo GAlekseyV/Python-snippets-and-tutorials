@@ -1,6 +1,6 @@
-# TODO Why do nor work test? It do not start.
+# TODO Why do not work test? It do not start.
 import unittest
-from PythonAdaptiveTrainerStepik.fraction_of_maximum_score import calc_part
+from fraction_of_maximum_score import calc_part
 
 
 scores_with_a = "FBAABCAD"
