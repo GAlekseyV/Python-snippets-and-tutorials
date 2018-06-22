@@ -35,14 +35,40 @@
 # print(d)                            # {2: [-1, -2]}
 # update_dictionary(d, 1, -3)
 # print(d)                            # {2: [-1, -2, -3]}
+import math
+import sys
+import requests
+import os
 
+# words = "a aa abC aa ac abc bcd a".lower().split()
+# stat = {}
+# for word in words:
+#     if word in stat:
+#         stat[word] += 1
+#     else:
+#         stat[word] = 1
+#
+# [print(key, value) for key, value in stat.items()]
+#
+# r = int(input())
+# print(2 * math.pi * r)
 
-words = "a aa abC aa ac abc bcd a".lower().split()
-stat = {}
-for word in words:
-    if word in stat:
-        stat[word] += 1
-    else:
-        stat[word] = 1
+# [print(arg, end=' ') for arg in sys.argv[1:]]
 
-[print(key, value) for key, value in stat.items()]
+# name = os.path.join('Tests', 'dataset_3378_3.txt')
+# url = ''
+# end = False
+# with open(name, 'r') as f:
+#     url = f.readline().strip()
+# r = requests.get(url)
+# url = r.text.strip()
+# text = url.split()
+# print(text)
+# while text[0] != "We":
+#     r = requests.get("https://stepic.org/media/attachments/course67/3.6.3/" + url)
+#     url = r.text.strip()
+#     text = url.split()
+#     print(text)
+# print(r.text)
+x = []
+print([x.append(1) for i in range(11)])
