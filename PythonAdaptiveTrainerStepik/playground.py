@@ -70,5 +70,14 @@ import os
 #     text = url.split()
 #     print(text)
 # print(r.text)
-x = []
-print([x.append(1) for i in range(11)])
+
+
+def s(a, *vs, b = 10):
+    res = a + b
+    for v in vs:
+        res += v
+    return res
+
+
+print(1 in [1, 2, 3])
+
