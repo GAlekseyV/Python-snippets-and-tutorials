@@ -72,12 +72,38 @@ import os
 # print(r.text)
 
 
-def s(a, *vs, b = 10):
-    res = a + b
-    for v in vs:
-        res += v
-    return res
+# def s(a, *vs, b = 10):
+#     res = a + b
+#     for v in vs:
+#         res += v
+#     return res
+#
+#
+# print(1 in [1, 2, 3])
+#
+#
+# import datetime
+# year, month, day = [int(x) for x in input().split()]
+# cur_date = datetime.date(year, month, day)
+# delta = datetime.timedelta(days = int(input()))
+# new_date = cur_date + delta
+# print(new_date.year, new_date.month, new_date.day, sep=" ")
+
+import itertools
 
 
-print(1 in [1, 2, 3])
+def primes():
+    num = 2
+    while True:
+        isPrime = True
+        for i in range(2, int(num ** 0.5) + 1):
+            if num % i == 0:
+                isPrime = False
+                break
+        if isPrime:
+            yield num
+        num += 1
 
+
+print(list(itertools.takewhile(lambda x : x <= 31, primes())))
+# [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31]
