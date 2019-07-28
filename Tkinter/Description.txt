@@ -1,0 +1,2 @@
+Разработка Gui приложения на Python с использованием Tkinter.
+https://www.youtube.com/watch?v=d7wZeAhn7B0
