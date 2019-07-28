@@ -1,5 +1,6 @@
 # https://py.checkio.org/blog/design-patterns-part-3/
 
+
 class Color:
     def fill_color(self):
         pass
